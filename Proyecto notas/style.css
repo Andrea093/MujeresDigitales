@@ -1,0 +1,24 @@
+/* styles.css */
+body { /* Selecciona el elemento body */
+    font-family: Arial, sans-serif; /* Establece la fuente del texto */
+    margin: 20px; /* Establece el margen del cuerpo */
+}
+
+#note-form { /* Selecciona el formulario con id "note-form" */
+    margin-bottom: 20px; /* Establece el margen inferior del formulario */
+}
+
+#note-list { /* Selecciona la lista con id "note-list" */
+    list-style: none; /* Elimina el estilo de lista */
+    padding: 0; /* Elimina el relleno de la lista */
+    margin: 0; /* Elimina el margen de la lista */
+}
+
+#note-list li { /* Selecciona cada elemento li dentro de la lista */
+    padding: 10px; /* Establece el relleno de cada elemento li */
+    border-bottom: 1px solid #ccc; /* Establece el borde inferior de cada elemento li */
+}
+
+#note-list li:last-child { /* Selecciona el último elemento li de la lista */
+    border-bottom: none; /* Elimina el borde inferior del último elemento li */
+}
