@@ -1,0 +1,118 @@
+/* styles.css */
+
+/* Estilos Generales */
+body {
+    background-color: #2c2c2c;
+    color: #f5f5f5;
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1, h2, h3 {
+    color: #ffcc00; /* Color dorado para títulos */
+  }
+  
+  /* Estilo para el contenedor principal */
+  .app {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Estilos para el componente Product */
+  .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .product-card {
+    background-color: #444;
+    border: 1px solid #666;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px;
+    width: calc(25% - 32px);
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s;
+  }
+  
+  .product-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .product-image {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+  
+  .add-to-cart-button {
+    background-color: #ffcc00;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .add-to-cart-button:hover {
+    background-color: #e6b800;
+  }
+  
+  /* Estilos para el carrito */
+  .cart {
+    background-color: #333;
+    border-radius: 8px;
+    padding: 16px;
+    margin-top: 20px;
+  }
+  
+  .cart h2 {
+    color: #ffcc00;
+  }
+  
+  .cart ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .cart li {
+    margin: 10px 0;
+  }
+  
+  /* Estilos para el checkout */
+  .checkout {
+    background-color: #444;
+    border-radius: 8px;
+    padding: 16px;
+    margin-top: 20px;
+  }
+  
+  .checkout h2 {
+    color: #ffcc00;
+  }
+  
+  .checkout button {
+    background-color: #ffcc00;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .checkout button:hover {
+    background-color: #e6b800;
+  }
+  
+  /* Estilo para el logo */
+  .logo {
+    max-width: 200px; /* Ajusta el tamaño del logo */
+    margin: 20px auto;
+    display: block;
+  }
