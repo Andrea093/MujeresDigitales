@@ -1,0 +1,35 @@
+/* src/components/AddTask.css */
+.coquette-title {
+    font-family: 'Dancing Script', cursive; /* Fuente cursiva */
+    font-size: 36px; /* Tamaño de la fuente (ajústalo según tus preferencias) */
+    color: #6a5acd; /* Color de la fuente (puedes cambiarlo si lo deseas) */
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+
+.coquette-button {
+    background-color: #ffcccb; /* Color rosa pastel */
+    color: white; /* Texto blanco */
+    font-family: 'Dancing Script', cursive; /* Fuente cursiva */
+    font-size: 24px; /* Tamaño de la fuente */
+    padding: 10px 20px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 30px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar */
+    transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves */
+}
+
+.coquette-button:hover {
+    background-color: #ffb6c1; /* Color rosa claro al pasar el mouse */
+    transform: scale(1.05); /* Efecto de aumento al pasar el mouse */
+}
+
+input, textarea {
+    font-family: 'Dancing Script', cursive; /* Fuente cursiva */
+    font-size: 18px; /* Tamaño de la fuente */
+    margin: 10px 0; /* Espaciado entre elementos */
+    padding: 10px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+    width: 100%; /* Ancho completo */
+    box-sizing: border-box; /* Para incluir padding y border en el ancho total */
+}

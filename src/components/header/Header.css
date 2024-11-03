@@ -1,0 +1,18 @@
+/* src/components/Header.css */
+.coquette-button {
+    background-color: #ffcccb; /* Color rosa pastel */
+    color: white; /* Texto blanco */
+    font-family: 'Dancing Script', cursive; /* Fuente cursiva */
+    font-size: 18px; /* Tamaño de la fuente */
+    padding: 10px 20px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 30px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar */
+    transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves */
+    margin: 5px; /* Espaciado entre botones */
+}
+
+.coquette-button:hover {
+    background-color: #ffb6c1; /* Color rosa claro al pasar el mouse */
+    transform: scale(1.05); /* Efecto de aumento al pasar el mouse */
+}
