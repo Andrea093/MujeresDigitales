@@ -1,0 +1,53 @@
+.home {
+  text-align: center; /* Centra el texto */
+  margin: 20px; /* Espaciado alrededor del contenedor principal */
+  color: #ffffff;
+}
+
+.banner {
+  margin-bottom: 20px; /* Espaciado debajo del banner */
+}
+
+.banner-logo {
+  width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+  max-height: 300px; /* Establece un máximo de altura para la imagen */
+  object-fit: cover; /* Asegura que la imagen llene el contenedor sin distorsionar */
+  display: block; /* Elimina espacios en la parte inferior */
+  color: #ffffff;
+}
+
+.image-container {
+  width: 80%; /* Ancho del contenedor de la imagen */
+  max-width: 600px; /* Ancho máximo para limitar el tamaño */
+  height: auto; /* Altura automática para evitar distorsiones */
+  overflow: hidden; /* Evitar que la imagen se desborde */
+  border: 2px solid #ddd; /* Borde alrededor de la cajita */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(239, 236, 236, 0.967); /* Sombra para un efecto 3D */
+  display: flex; /* Para centrar la imagen */
+  align-items: center; /* Centra verticalmente la imagen */
+  justify-content: center; /* Centra horizontalmente la imagen */
+  margin: 0 auto; /* Centra el contenedor en la página */
+  color: #ffffff;
+}
+
+.banner-title {
+  font-family: 'Your Elegant Font', cursive; /* Cambia a la fuente que desees */
+  font-size: 2.5em; /* Tamaño de fuente para el título */
+  margin-top: 10px; /* Espacio encima del título */
+  color: #e9b5db;
+}
+
+.welcome-message {
+  font-family: 'Your Elegant Font', cursive; /* Cambia a la fuente que desees */
+  font-size: 1.5em; /* Tamaño de fuente para el mensaje de bienvenida */
+  margin: 10px 0; /* Espaciado arriba y abajo del mensaje */
+  color: #e9b5db;
+}
+
+.cart-status {
+  font-size: 1.2em; /* Tamaño de fuente para el estado del carrito */
+  margin: 10px 0; /* Espaciado arriba y abajo del estado del carrito */
+  color: #e9b5db;
+}

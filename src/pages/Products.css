@@ -1,0 +1,44 @@
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ajuste para un tamaño mínimo más grande */
+  gap: 20px;
+  background-color: #e6e6fa; /* Lila */
+  padding: 20px;
+}
+
+.product {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  background-color: #fff;
+  transition: transform 0.2s;
+  border-radius: 5px; /* Agregar esquinas redondeadas */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para un efecto 3D */
+}
+
+.product:hover {
+  transform: scale(1.05);
+}
+
+.product img {
+  max-width: 100%;
+  height: auto; /* Mantener la proporción de la imagen */
+}
+
+.product h2, .product p {
+  color: #000;
+}
+
+button {
+  background-color: #9370db; /* Color morado */
+  border: 2px solid #000;
+  color: #fff;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px; /* Esquinas redondeadas en botones */
+}
+
+button:hover {
+  background-color: #000;
+  color: #fff;
+}
