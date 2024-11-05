@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
-import bienvenida from '../assets/bienvenida.jpg';
-import bienvenida1 from '../assets/bienvenida1.jpg';
-import bienvenida2 from '../assets/bienvenida2.jpg';
+import bienvenida from '/assets/bienvenida.jpg';
+import bienvenida1 from '/assets/bienvenida1.jpg';
+import bienvenida2 from '/assets/bienvenida2.jpg';
 import './Home.css';
 
 const images = [bienvenida, bienvenida1, bienvenida2];

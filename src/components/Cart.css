@@ -1,0 +1,27 @@
+.cart {
+    padding: 20px;
+    background-color: transparent; /* Asegúrate de que el fondo sea transparente */
+    text-align: center;
+    border: none; /* Eliminar bordes, si los hay */
+  }
+  
+  .cart-icon {
+    color: white; /* Mantener el color blanco del icono */
+    font-size: 2em; /* Ajustar el tamaño del icono según sea necesario */
+    display: inline-block; /* Asegúrate de que el ícono se muestre correctamente */
+    vertical-align: middle;
+    background: none; /* Asegurarse de que no haya fondo */
+    border: none; /* Asegurarse de que no haya borde */
+  }
+  
+  .cart-item-count {
+    display: inline-block;
+    vertical-align: middle;
+    background: rgb(179, 8, 167); /* Fondo para el contador */
+    border-radius: 50%; /* Esquinas redondeadas */
+    padding: 2px 8px;
+    color: white; /* Color del texto */
+    font-size: 12px;
+    margin-left: 5px; /* Espacio entre el icono y el contador */
+  }
+  

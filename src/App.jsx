@@ -4,13 +4,14 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Products from './pages/Products';
 import ProductDetails from './components/ProductDetails';
+import Cart from './components/Cart'; // Asegúrate de que este componente exista
 import GlobalStyles from './styles/GlobalStyles';
 
 function App() {
   const [cartItems, setCartItems] = useState([]);
 
   const addToCart = (product) => {
-    setCartItems([...cartItems, product]);
+    setCartItems((prevItems) => [...prevItems, product]); // Usar función de actualización de estado
   };
 
   return (
@@ -20,7 +21,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home cartItems={cartItems} />} />
         <Route path="/products" element={<Products addToCart={addToCart} />} />
-        <Route path="/products/details" element={<ProductDetails addToCart={addToCart} />} /> {/* Cambiado a /products/details */}
+        <Route path="/products/details" element={<ProductDetails addToCart={addToCart} />} />
+        <Route path="/cart" element={<Cart cartItems={cartItems} />} />
         <Route path="*" element={<h1>Página no encontrada</h1>} />
       </Routes>
     </Router>
