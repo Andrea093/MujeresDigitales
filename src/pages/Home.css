@@ -33,21 +33,55 @@
 }
 
 .banner-title {
-  font-family: 'Your Elegant Font', cursive; /* Cambia a la fuente que desees */
+  font-family: 'Pacifico', cursive; /* Fuente similar a la de la navbar */
   font-size: 2.5em; /* Tamaño de fuente para el título */
-  margin-top: 10px; /* Espacio encima del título */
-  color: #e9b5db;
+  margin-top: 200px; /* Aumenta el espacio encima del título para que no lo cubra el navbar */
+  color: #9370db; /* Color lila para el título */
+  z-index: 1; /* Asegura que esté encima de otros elementos */
+  position: relative; /* Permite ajustar la posición */
 }
 
 .welcome-message {
-  font-family: 'Your Elegant Font', cursive; /* Cambia a la fuente que desees */
+  font-family: 'Pacifico', cursive; /* Fuente similar a la de la navbar */
   font-size: 1.5em; /* Tamaño de fuente para el mensaje de bienvenida */
   margin: 10px 0; /* Espaciado arriba y abajo del mensaje */
-  color: #e9b5db;
+  color: #9370db; /* Color lila para el mensaje */
+  z-index: 1; /* Asegura que esté encima de otros elementos */
+  position: relative; /* Permite ajustar la posición */
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.social-icon {
+  font-size: 2em;
+  color: #9370db;
+  transition: color 0.3s;
+}
+
+.social-icon:hover {
+  color: #8a64c7;
+}
+
+.description-text {
+  font-family: 'Pacifico', cursive; /* Fuente similar a la del slogan */
+  font-size: 1.2em;
+  margin-top: 20px;
+  color: #9370db; /* Color lila para el texto */
+  text-align: center; /* Centrar el texto */
+  background-color: #f9f9f9; /* Fondo del recuadro */
+  border: 1px solid #9370db; /* Borde lila */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 20px; /* Espaciado interno */
+  display: inline-block; /* Ajusta el tamaño al contenido */
 }
 
 .cart-status {
   font-size: 1.2em; /* Tamaño de fuente para el estado del carrito */
   margin: 10px 0; /* Espaciado arriba y abajo del estado del carrito */
-  color: #e9b5db;
+  color: #9370db; /* Color lila */
 }

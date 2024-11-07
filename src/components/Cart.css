@@ -1,27 +1,94 @@
 .cart {
-    padding: 20px;
-    background-color: transparent; /* Asegúrate de que el fondo sea transparente */
-    text-align: center;
-    border: none; /* Eliminar bordes, si los hay */
+  padding: 20px;
+  background-color: transparent; /* Asegúrate de que el fondo sea transparente */
+  text-align: center;
+  border: none; /* Eliminar bordes, si los hay */
+}
+
+.cart h2 {
+  font-size: 32px;
+  font-style: italic;
+  color: #9370db; /* Color lila para el título */
+  font-family: 'Pacifico', cursive; /* Fuente bonita similar a la de la navbar */
+}
+
+.cart-icon {
+  color: white; /* Mantener el color blanco del icono */
+  font-size: 2em; /* Ajustar el tamaño del icono según sea necesario */
+  display: inline-block; /* Asegúrate de que el ícono se muestre correctamente */
+  vertical-align: middle;
+  background: none; /* Asegurarse de que no haya fondo */
+  border: none; /* Asegurarse de que no haya borde */
+}
+
+.cart-item-count {
+  display: inline-block;
+  vertical-align: middle;
+  background: rgb(179, 8, 167); /* Fondo para el contador */
+  border-radius: 50%; /* Esquinas redondeadas */
+  padding: 2px 8px;
+  color: white; /* Color del texto */
+  font-size: 12px;
+  margin-left: 5px; /* Espacio entre el icono y el contador */
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.cart-item img {
+  width: 150px; /* Aumenta el tamaño de las imágenes */
+  height: 150px; /* Aumenta el tamaño de las imágenes */
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.cart-item-details {
+  flex: 1;
+  text-align: left;
+}
+
+.cart-item h3, .cart-item p {
+  color: #9370db; /* Lila para el texto */
+}
+
+.cart-summary {
+  text-align: right;
+  margin-top: 20px;
+  color: #9370db; /* Lila para el texto */
+}
+
+.cart-summary p {
+  margin: 5px 0;
+}
+
+.checkout-button {
+  background-color: #9370db; /* Color morado */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+/* Ajustes de responsividad */
+@media (max-width: 768px) {
+  .cart-item {
+      flex-direction: column;
+      align-items: flex-start;
   }
-  
-  .cart-icon {
-    color: white; /* Mantener el color blanco del icono */
-    font-size: 2em; /* Ajustar el tamaño del icono según sea necesario */
-    display: inline-block; /* Asegúrate de que el ícono se muestre correctamente */
-    vertical-align: middle;
-    background: none; /* Asegurarse de que no haya fondo */
-    border: none; /* Asegurarse de que no haya borde */
+
+  .cart-item img {
+      margin-bottom: 10px;
   }
-  
-  .cart-item-count {
-    display: inline-block;
-    vertical-align: middle;
-    background: rgb(179, 8, 167); /* Fondo para el contador */
-    border-radius: 50%; /* Esquinas redondeadas */
-    padding: 2px 8px;
-    color: white; /* Color del texto */
-    font-size: 12px;
-    margin-left: 5px; /* Espacio entre el icono y el contador */
+
+  .cart-summary {
+      text-align: center;
   }
-  
+}
