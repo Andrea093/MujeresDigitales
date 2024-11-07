@@ -12,26 +12,28 @@ const Cart = ({ cartItems }) => {
       {cartItems.length === 0 ? (
         <p>No hay productos en el carrito.</p>
       ) : (
-        <ul>
-          {cartItems.map((item, index) => (
-            <li key={index} className="cart-item">
-              <img src={item.img} alt={item.name} />
-              <div className="cart-item-details">
-                <h3>{item.name}</h3>
-                <p>Unidades: {item.quantity}</p>
-                <p>Precio: ${item.price}</p>
-                <p>Subtotal: ${item.price * item.quantity}</p>
-              </div>
-            </li>
-          ))}
-        </ul>
+        <>
+          <ul>
+            {cartItems.map((item, index) => (
+              <li key={index} className="cart-item">
+                <img src={item.img} alt={item.name} />
+                <div className="cart-item-details">
+                  <h3>{item.name}</h3>
+                  <p>Unidades: {item.quantity}</p>
+                  <p>Precio: ${item.price}</p>
+                  <p>Subtotal: ${item.price * item.quantity}</p>
+                </div>
+              </li>
+            ))}
+          </ul>
+          <div className="cart-summary">
+            <p>Subtotal: ${subtotal.toFixed(2)}</p>
+            <p>Envío: ${shippingCost.toFixed(2)}</p>
+            <p>Total: ${total.toFixed(2)}</p>
+            <button className="checkout-button">Ir a pagar</button>
+          </div>
+        </>
       )}
-      <div className="cart-summary">
-        <p>Subtotal: ${subtotal}</p>
-        <p>Envío: ${shippingCost}</p>
-        <p>Total: ${total}</p>
-        <button className="checkout-button">Ir a pagar</button>
-      </div>
     </div>
   );
 };
