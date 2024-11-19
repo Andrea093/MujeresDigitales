@@ -1,0 +1,123 @@
+nav.navbar {
+  background-color: #9370db; /* Color morado */
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar-logo-title {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.navbar-title {
+  font-size: 32px;
+  font-style: italic;
+  color: #fff;
+  font-family: 'Pacifico', cursive;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 5px; /* Reducir el espacio entre los elementos */
+}
+
+.navbar-links li {
+  position: relative; /* Para posicionar el menú desplegable */
+}
+
+.navbar-home {
+  display: flex; /* Alinear icono y texto */
+  align-items: center; /* Centrar verticalmente */
+  color: white; /* Color blanco para el enlace */
+  text-decoration: none; /* Sin subrayado */
+}
+
+.navbar-home-icon,
+.cart-icon {
+  font-size: 2em; /* Asegurar que ambos iconos tengan el mismo tamaño */
+  color: white; /* Asegurarse de que ambos iconos sean blancos */
+}
+
+.hamburger-bar {
+  width: 30px;
+  height: 4px;
+  background-color: white; /* Color blanco para las barras */
+  margin: 3px 0; /* Espaciado entre las barras */
+  display: block; /* Asegurarse que se vean bien */
+}
+
+.navbar-dropdown {
+  cursor: pointer; /* Cambia el cursor al pasar sobre el menú */
+}
+
+.navbar-dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #9370db; /* Color morado */
+  padding: 10px;
+  border-radius: 8px;
+  top: 30px; /* Distancia desde el menú principal */
+  left: 0;
+  z-index: 10; /* Asegurarse que se muestre encima de otros elementos */
+}
+
+.navbar-dropdown-menu.open {
+  display: block; /* Mostrar el menú desplegable cuando está activo */
+}
+
+/* Estilo para el carrito */
+.cart {
+  position: relative;
+  margin-right: 45px; /* Reducir aún más el espacio entre el carrito y otros iconos */
+}
+
+.cart-link {
+  display: flex; /* Alinear icono y texto */
+  align-items: center; /* Centrar verticalmente */
+  color: white; /* Color blanco para el enlace del carrito */
+  text-decoration: none; /* Sin subrayado */
+}
+
+.cart-count {
+  position: absolute;
+  top: 10px; /* Mover el número más abajo y más cerca del ícono */
+  right: 10px; /* Ajustar la posición para estar más cerca del ícono */
+  background: rgb(179, 8, 167);
+  border-radius: 50%;
+  padding: 2px 5px; /* Ajustar el padding para que sea más pequeño */
+  color: white;
+  font-size: 12px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff; /* Color de texto para los enlaces */
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Mostrar menú hamburguesa en dispositivos móviles */
+@media (max-width: 768px) {
+  .navbar-links {
+    display: flex; /* Mantener la flexibilidad */
+  }
+
+  .cart-count {
+    top: 0px; /* Ajustar la posición para estar más cerca del ícono */
+    right: 0px; /* Ajustar la posición para mejorar la visibilidad en móviles */
+  }
+}

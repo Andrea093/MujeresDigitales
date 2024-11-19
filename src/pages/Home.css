@@ -1,0 +1,87 @@
+.home {
+  text-align: center; /* Centra el texto */
+  margin: 20px; /* Espaciado alrededor del contenedor principal */
+  color: #ffffff;
+}
+
+.banner {
+  margin-bottom: 20px; /* Espaciado debajo del banner */
+}
+
+.banner-logo {
+  width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+  max-height: 300px; /* Establece un máximo de altura para la imagen */
+  object-fit: cover; /* Asegura que la imagen llene el contenedor sin distorsionar */
+  display: block; /* Elimina espacios en la parte inferior */
+  color: #ffffff;
+}
+
+.image-container {
+  width: 80%; /* Ancho del contenedor de la imagen */
+  max-width: 600px; /* Ancho máximo para limitar el tamaño */
+  height: auto; /* Altura automática para evitar distorsiones */
+  overflow: hidden; /* Evitar que la imagen se desborde */
+  border: 2px solid #ddd; /* Borde alrededor de la cajita */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(239, 236, 236, 0.967); /* Sombra para un efecto 3D */
+  display: flex; /* Para centrar la imagen */
+  align-items: center; /* Centra verticalmente la imagen */
+  justify-content: center; /* Centra horizontalmente la imagen */
+  margin: 0 auto; /* Centra el contenedor en la página */
+  color: #ffffff;
+}
+
+.banner-title {
+  font-family: 'Pacifico', cursive; /* Fuente similar a la de la navbar */
+  font-size: 2.5em; /* Tamaño de fuente para el título */
+  margin-top: 200px; /* Aumenta el espacio encima del título para que no lo cubra el navbar */
+  color: #9370db; /* Color lila para el título */
+  z-index: 1; /* Asegura que esté encima de otros elementos */
+  position: relative; /* Permite ajustar la posición */
+}
+
+.welcome-message {
+  font-family: 'Pacifico', cursive; /* Fuente similar a la de la navbar */
+  font-size: 1.5em; /* Tamaño de fuente para el mensaje de bienvenida */
+  margin: 10px 0; /* Espaciado arriba y abajo del mensaje */
+  color: #9370db; /* Color lila para el mensaje */
+  z-index: 1; /* Asegura que esté encima de otros elementos */
+  position: relative; /* Permite ajustar la posición */
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.social-icon {
+  font-size: 2em;
+  color: #9370db;
+  transition: color 0.3s;
+}
+
+.social-icon:hover {
+  color: #8a64c7;
+}
+
+.description-text {
+  font-family: 'Pacifico', cursive; /* Fuente similar a la del slogan */
+  font-size: 1.2em;
+  margin-top: 20px;
+  color: #9370db; /* Color lila para el texto */
+  text-align: center; /* Centrar el texto */
+  background-color: #f9f9f9; /* Fondo del recuadro */
+  border: 1px solid #9370db; /* Borde lila */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 20px; /* Espaciado interno */
+  display: inline-block; /* Ajusta el tamaño al contenido */
+}
+
+.cart-status {
+  font-size: 1.2em; /* Tamaño de fuente para el estado del carrito */
+  margin: 10px 0; /* Espaciado arriba y abajo del estado del carrito */
+  color: #9370db; /* Color lila */
+}

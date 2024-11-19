@@ -1,0 +1,29 @@
+.product-details {
+  text-align: center;
+  padding: 20px;
+  background-color: #e6e6fa; /* Lila */
+}
+
+.product-details img {
+  max-width: 100%; /* Asegúrate de que la imagen sea responsiva */
+  height: auto; /* Mantener la proporción de la imagen */
+  margin: 20px auto;
+}
+
+.product-details h2, .product-details p {
+  color: #000;
+}
+
+button {
+  background-color: #9370db; /* Color morado */
+  border: 2px solid #000;
+  color: #fff;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px; /* Esquinas redondeadas en botones */
+}
+
+button:hover {
+  background-color: #000;
+  color: #fff;
+}
